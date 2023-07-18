@@ -1,0 +1,129 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AddEventIntent",
+          "slots": [
+            {
+              "name": "eventName",
+              "type": "LIST_OF_EVENTS"
+            }
+          ],
+          "samples": [
+            "add {eventName}"
+          ]
+        },
+        {
+          "name": "RemoveEventIntent",
+          "slots": [
+            {
+              "name": "eventName",
+              "type": "LIST_OF_EVENTS"
+            }
+          ],
+          "samples": [
+            "remove {eventName}"
+          ]
+        },
+        {
+          "name": "ListEventsIntent",
+          "slots": [],
+          "samples": [
+            "list events"
+          ]
+        },
+        {
+          "name": "RoundEventIntent",
+          "slots": [
+            {
+              "name": "eventName",
+              "type": "LIST_OF_EVENTS"
+            }
+          ],
+          "samples": [
+            "round {eventName}"
+          ]
+        },
+        {
+          "name": "TriggerRoutineIntent",
+          "slots": [
+            {
+              "name": "eventName",
+              "type": "LIST_OF_EVENTS"
+            }
+          ],
+          "samples": [
+            "trigger {eventName} routine"
+          ]
+        },
+        {
+          "name": "GetEventReportIntent",
+          "slots": [
+            {
+              "name": "eventName",
+              "type": "LIST_OF_EVENTS"
+            },
+            {
+              "name": "reportMonth",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "get report of {eventName} for {reportMonth}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cooking"
+              }
+            }
+          ],
+          "name": "LIST_OF_EVENTS"
+        }
+      ],
+      "invocationName": "daily event manager"
+    }
+  }
+}
